@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Iván</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">FORMACIÓN</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/ivan.png" alt="">
+            </div>
+            <h1 style="font-weight: lighter;">Iván Bermúdez</h1>
+            <h2 style="font-size: 18px;">Licenciado en Tecnología <br>Community Manager</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2 style="font-weight: lighter;">Sobre Mí</h2>
+            <p>Hola, mi nombre es <span>Iván Felipe Bermúdez</span>. Soy un docente en tecnología altamente capacitado, con un fuerte conocimiento en las últimas tendencias y herramientas tecnológicas. Me apasiona enseñar a estudiantes de todas las edades cómo utilizar la tecnología para mejorar sus vidas y desbloquear su potencial. Tengo una amplia experiencia en la planificación y ejecución de programas educativos de alta calidad, en los que los estudiantes pueden aprender habilidades prácticas y útiles en tecnología. Mi enfoque educativo es interactivo, creativo y centrado en el estudiante, lo que permite a los estudiantes aprender de manera efectiva mientras se divierten.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3 style="font-weight: lighter;">Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            +57 3007539752
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            ivan.bermudez@utp.edu.co
+                        </li>
+                        <li>
+                            <strong>CvLack</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Risaralda, Pereira
+                        </li>
+                        <li>
+                            <strong>Experiencia:</strong>
+                            2 años
+                        </li>
+                        <li>
+                            <strong>Título obtenido:</strong>
+                            Licenciado en Tecnología
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>DOCENTE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3 style="font-weight: lighter;">Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>CURSOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2 style="font-weight: lighter;">Formación Profesional</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3 style="font-weight: lighter;">Educación</h3>
+                    <div class="item izq">
+                        <h4>Magíster en Educación   <span style="background-color: #1CB698; color: #fff; border-radius: 25px; padding: 0 5px;">Estudiando</span></h4>
+                        <span class="casa">Universidad Tecnológica de Pereira</span>
+                        <span class="fecha">2024 - Actualidad</span>
+                        <p style="text-align: left;">Estoy actualmente iniciando mis estudios de posgrado en un programa altamente reconocido y reacreditado en Alta Calidad por el Ministerio de Educación. Mi principal objetivo es adquirir habilidades investigativas para mejorar tanto personal como profesionalmente. Buscando brindar una educación de calidad a mis estudiantes y contribuir al éxito de la Institución Educativa en la que labore.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Licenciado en Tecnología</h4>
+                        <span class="casa">Universidad Tecnológica de Pereira</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <p>Soy un docente en tecnología altamente capacitado, con un fuerte conocimiento en las últimas tendencias y herramientas tecnológicas. Me apasiona enseñar a estudiantes de todas las edades cómo utilizar la tecnología para mejorar sus vidas y desbloquear todo su potencial.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Diseño e integración multimedia</h4>
+                        <span class="casa">Servicio Nacional de aprendizaje (SENA)</span>
+                        <span class="fecha">2016 - 2018</span>
+                        <p>Tengo habilidades como diseñador gráfico, con pensamiento creativo y experto en la creación de diseños personalizados para una variedad de clientes y sectores. Mi enfoque está siempre centrado en los requerimientos del cliente, trabajando en estrecha colaboración con ellos para comprender sus necesidades y objetivos para poder crear soluciones creativas y efectivas que los ayuden a destacarse en cualquier campo de industria.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3 style="font-weight: lighter;">Experiencia Profesional</h3>
+                    <div class="item der">
+                        <h4>Docente de Aula</h4>
+                        <span class="casa">Universidad Tecnológica de Pereira</span>
+                        <span class="fecha">Curso Programación Básica para el Aula</span>
+                        <p>Me desempeñe como docente del Curso Programación Básica para el aula, en donde estuve acargo del módulo 2 como experto en los lenguajes de programación HTML, CSS y Javascript, este curso tuvo una duración de 5 semanas, se llevó acabo dentro de la Universidad Tecnológica de Pereira y el público objetivo eran egresados de la Facultad de Educación.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Docente de Aula</h4>
+                        <span class="casa">Colegio Suroriental de Pereira</span>
+                        <span class="fecha">2022 (6 meses)</span>
+                        <p>Como docente, mi enfoque se centraba en desarrollar lecciones y actividades que fomentaran la adquisición de conocimientos y habilidades por parte de mis estudiantes. Además, llevaba a cabo una evaluación constante de su progreso y proporcionaba retroalimentación constructiva para su crecimiento. Asimismo, me esforzaba por crear un ambiente de aprendizaje seguro y respetuoso, fomentando la colaboración y la participación activa de los estudiantes, los docentes y los padres de familia.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Community Manager</h4>
+                        <span class="casa">Universidad Tecnológica de Pereira</span>
+                        <span class="fecha">2022 - 2023 (15 meses)</span>
+                        <p>Como responsable de las redes sociales y la plataforma web del programa de Maestría en Educación, tenía la tarea de gestionar de manera efectiva las cuentas en redes sociales y mantener actualizada la plataforma web. Esto implicaba crear y publicar contenido de alta calidad, así como monitorear y analizar meticulosamente las métricas y estadísticas en línea.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2 style="font-weight: lighter;">Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <!-- <span>81%</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contenido-seccion" style="background-color: #1e2326;">
+		<header>
+			<div class="logo">
+				<h1 style="font-size: 48px;
+                font-family: 'Righteous';
+                text-align: center;
+                padding: 0; color: #fff;" id="portafolio">Proyectos</h1>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Audiovisual</a>
+				<a href="#">Redes Sociales</a>
+				<a href="#">Programación</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+
+			<div class="item" 
+				 data-categoria="redes sociales"
+				 data-etiquetas="redes sociales"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/r1.png" alt="">
+                    <div class="descripcion">REDES SOCIALES</div>
+				</div>
+			</div>
+
+            <div class="item" 
+                data-categoria="redes sociales"
+                data-etiquetas="redes sociales"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/r2.png" alt="">
+                    <div class="descripcion">REDES SOCIALES</div>
+				</div>
+			</div>
+
+            <div class="item" 
+            data-categoria="redes sociales"
+            data-etiquetas="redes sociales"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/r3.png" alt="">
+                    <div class="descripcion">REDES SOCIALES</div>
+				</div>
+			</div>
+
+            <div class="item" 
+                data-categoria="redes sociales"
+                data-etiquetas="redes sociales"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/r4.png" alt="">
+                    <div class="descripcion">REDES SOCIALES</div>
+				</div>
+			</div>
+
+            <div class="item" 
+                data-categoria="redes sociales"
+                data-etiquetas="redes sociales"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/r5.png" alt="">
+                    <div class="descripcion">REDES SOCIALES</div>
+				</div>
+			</div>
+
+            <div class="item" 
+                data-categoria="redes sociales"
+                data-etiquetas="redes sociales"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/r6.png" alt="">
+                    <div class="descripcion">REDES SOCIALES</div>
+				</div>
+			</div>
+
+            <div class="item" 
+                data-categoria="redes sociales"
+                data-etiquetas="redes sociales"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/r7.png" alt="">
+                    <div class="descripcion">REDES SOCIALES</div>
+				</div>
+			</div>
+
+
+
+			<div class="item"
+				 data-categoria="programación"
+				 data-etiquetas="programación"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona2.png" alt="">
+                    <div class="descripcion">12</div>
+				</div>
+			</div>
+
+
+			<div class="item"
+				 data-categoria="programación"
+				 data-etiquetas="programación"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona2.png" alt="">
+                    <div class="descripcion">15</div>
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="audiovisual"
+				 data-etiquetas="audiovisual montañas niebla"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/ia.png" alt="" style="border-radius: 15px;">
+                    <div class="descripcion"><a href="https://youtu.be/r87j_2F2MPs" target="_blank" style="color: #fff; font-size: 25px;"><i class="fa-brands fa-youtube" style="font-size: 55px; justify-content: center; display: inline-block;"></i></a><p style="text-align: center; font-size: 25px; display: block;"><a href="https://youtu.be/r87j_2F2MPs" style="text-decoration: none; color: #fff;" target="_blank"> Click para ver en youtube</a></p></div>
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="audiovisual"
+				 data-etiquetas="audiovisual paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/su1.png" alt="" style="border-radius: 15px;">
+                    <div class="descripcion"><a href="https://youtu.be/xBPjdD4VHM8" target="_blank" style="color: #fff; font-size: 25px;"><i class="fa-brands fa-youtube" style="font-size: 55px; justify-content: center; display: inline-block;"></i></a><p style="text-align: center; font-size: 25px; display: block;"><a href="https://youtu.be/xBPjdD4VHM8" style="text-decoration: none; color: #fff;" target="_blank"> Click para ver en youtube</a></p></div>
+        
+				</div>
+			</div>
+
+            <div class="item" 
+				 data-categoria="audiovisual"
+				 data-etiquetas="audiovisual paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/su2.png" alt="" style="border-radius: 15px;">
+                    <div class="descripcion"><a href="https://youtu.be/toSJSf1DVg0" target="_blank" style="color: #fff; font-size: 25px;"><i class="fa-brands fa-youtube" style="font-size: 55px; justify-content: center; display: inline-block;"></i></a><p style="text-align: center; font-size: 25px; display: block;"><a href="https://youtu.be/toSJSf1DVg0" style="text-decoration: none; color: #fff;" target="_blank"> Click para ver en youtube</a></p></div>
+        
+				</div>
+			</div>
+
+            <div class="item" 
+				 data-categoria="audiovisual"
+				 data-etiquetas="audiovisual paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/su3.png" alt="" style="border-radius: 15px;">
+                    <div class="descripcion"><a href="https://youtu.be/uTamW-mtDX4" target="_blank" style="color: #fff; font-size: 25px;"><i class="fa-brands fa-youtube" style="font-size: 55px; justify-content: center; display: inline-block;"></i></a><p style="text-align: center; font-size: 25px; display: block;"><a href="https://youtu.be/uTamW-mtDX4" style="text-decoration: none; color: #fff;" target="_blank"> Click para ver en youtube</a></p></div>
+        
+				</div>
+			</div>
+
+            <div class="item" 
+				 data-categoria="audiovisual"
+				 data-etiquetas="audiovisual paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/animatic.png" alt="" style="border-radius: 15px;">
+                    <div class="descripcion"><a href="https://youtu.be/27i3t6uVBHw" target="_blank" style="color: #fff; font-size: 25px;"><i class="fa-brands fa-youtube" style="font-size: 55px; justify-content: center; display: inline-block;"></i></a><p style="text-align: center; font-size: 25px; display: block;"><a href="https://youtu.be/27i3t6uVBHw" style="text-decoration: none; color: #fff;" target="_blank"> Click para ver en youtube</a></p></div>
+        
+				</div>
+			</div>
+
+            <div class="item" 
+				 data-categoria="audiovisual"
+				 data-etiquetas="audiovisual paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/planos.png" alt="" style="border-radius: 15px;">
+                    <div class="descripcion"><a href="https://youtu.be/HGlv7zFHlpA" target="_blank" style="color: #fff; font-size: 25px;"><i class="fa-brands fa-youtube" style="font-size: 55px; justify-content: center; display: inline-block;"></i></a><p style="text-align: center; font-size: 25px; display: block;"><a href="https://youtu.be/HGlv7zFHlpA" style="text-decoration: none; color: #fff;" target="_blank"> Click para ver en youtube</a></p></div>
+        
+				</div>
+			</div>
+
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+	</div>
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Pereira, Risaralda
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>+57 3007539752
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i><h6 style="display: inline-block; font-size: 14px; font-weight: normal; text-align: left;">ivan.bermudez@utp.edu.co</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
