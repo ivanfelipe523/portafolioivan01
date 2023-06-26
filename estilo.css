@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #b62e1c;
+    color: #1CB698;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -396,7 +396,7 @@ html{
 .curriculum{
     background-color: #1e2326;
     color: #fff;
-    padding: 20px 20px;
+    padding: 15px 0px 0px 0px;
 }
 .curriculum .contenido-seccion{
     max-width: 1100px;
@@ -449,6 +449,11 @@ html{
     color: #1CB698;
     margin-bottom: 10px;
 }
+.curriculum .fila .item .fecha1{
+    display: inline;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
 .curriculum .fila .item p{
     line-height: 24px;
 }
@@ -456,8 +461,19 @@ html{
     border-right: 2px solid #1CB698;
     margin-right: 20px;
 }
+
+.curriculum .fila .izq1{
+    border-right: 2px solid #E81C2E;
+    margin-right: 20px;
+}
+
 .curriculum .fila .der{
     border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+
+.curriculum .fila .der1{
+    border-left: 2px solid #E81C2E;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
@@ -469,12 +485,36 @@ html{
     right: -47px;
     z-index: 5;
 }
+
+
+.curriculum .fila .item .conectori1{
+    height: 2px;
+    background-color: #E81C2E;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+
 .curriculum .fila .item .conectori .circuloi{
     display: block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: #41b8ca;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectori .circuloi1{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #E81C2E;
     float: right;
     position: relative;
     bottom: 4px;
