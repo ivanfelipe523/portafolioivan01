@@ -9,6 +9,10 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
+body{
+    background-color: #1e2326;
+}
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -949,7 +953,7 @@ header .categorias a.activo {
 }
 
 .overlay img {
-	max-width: 300px;
+	max-width: 230px;
 }
 
 .overlay .descripcion {
