@@ -21,24 +21,28 @@ window.addEventListener('load', () => {
 		});
 	});
 
-	// Agregamos el listener para la barra de busqueda
-	document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
-		const busqueda = evento.target.value;
-		grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
-	});
+	// Agregamos listener para las imágenes
+const overlay = document.getElementById('overlay');
+document.querySelectorAll('.grid .item img').forEach((elemento) => {
+  elemento.addEventListener('click', () => {
+    const ruta = elemento.getAttribute('src');
+    const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+    const enlaceURL = elemento.dataset.enlace; // Obtener la URL específica del atributo de datos
 
-	// Agregamos listener para las imagenes
-	const overlay = document.getElementById('overlay');
-	document.querySelectorAll('.grid .item img').forEach((elemento) => {
-		elemento.addEventListener('click', () => {
-			const ruta = elemento.getAttribute('src');
-			const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+    overlay.classList.add('activo');
+    document.querySelector('#overlay img').src = ruta;
+    document.querySelector('#overlay .descripcion').innerHTML = descripcion;
 
-			overlay.classList.add('activo');
-			document.querySelector('#overlay img').src = ruta;
-			document.querySelector('#overlay .descripcion').innerHTML = descripcion;
-		});
-	});
+    // Convertir la imagen en un enlace con la URL específica
+    const enlace = document.createElement('a');
+    enlace.href = enlaceURL;
+    enlace.target = '_blank';
+    enlace.appendChild(elemento.cloneNode(true));
+
+    // Reemplazar la imagen con el enlace
+    document.querySelector('#overlay img').replaceWith(enlace);
+  });
+});
 
 	// Eventlistener del boton de cerrar
 	document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
