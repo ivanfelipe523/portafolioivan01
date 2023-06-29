@@ -313,7 +313,7 @@ body{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 45%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .htmlcss{
@@ -322,7 +322,7 @@ body{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 5%;}
+    100%{width: 87%;}
 }
 
 .skills .skill .photoshop{
@@ -331,7 +331,7 @@ body{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .wordpress{
@@ -349,7 +349,7 @@ body{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 92%;}
 }
 
 .skills .skill .comunicacion{
