@@ -84,7 +84,7 @@ body{
     width: 80%;
     margin: auto;
     border-radius: 100%;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .inicio .contenido-banner h1{
     font-size: 42px;
@@ -109,32 +109,16 @@ body{
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: #1CB698;
-    animation: icono .6s ease;
-}
-
-@keyframes icono {
-	from {
-		transform: rotate3d(0,0,0,0);
-	}
-	to {
-		transform: rotate3d(0,1,0, 360deg);
-	}
+    color: #fff;
 }
 
 
 .footer .redes a:hover{
     background-color: #1CB698;
-    animation: icono .6s ease;
+    color: #fff;
 }
 
-@keyframes icono {
-	from {
-		transform: rotate3d(0,0,0,0);
-	}
-	to {
-		transform: rotate3d(0,1,0, 360deg);
-	}
-}
+
 
 .sobremi{
     background-color: #0E2954;
@@ -207,6 +191,7 @@ body{
     transition: .3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #1CB698;
+
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -429,6 +414,7 @@ body{
 .curriculum .fila .izquierda{
     border-right: 2px solid #252A2E;
 }
+
 .curriculum .fila .derecha{
     border-left: 2px solid #252A2E;
 }
