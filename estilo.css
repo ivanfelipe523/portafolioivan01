@@ -229,6 +229,27 @@ body{
     background-color: #1CB698;
     transition: 1s;
 }
+
+/*Fotos experiencia*/
+
+ .pr1{
+    padding: 30px;
+ }
+
+ .titulo{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+}
+
+.fotos img{
+    display: inline-block;
+}
+
+
+
 /* SECCION S K I L L S */
 .skills{
     background-color: #0E2954;
